@@ -12,7 +12,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <io.a2a.sdk.version>0.3.0.Alpha1</io.a2a.sdk.version>
+        <io.a2a.sdk.version>0.3.0.Beta1</io.a2a.sdk.version>
         <jakarta.enterprise.cdi-api.version>4.1.0</jakarta.enterprise.cdi-api.version>
         <quarkus.platform.version>3.22.3</quarkus.platform.version>
         <quarkus.langchain4j.version>1.0.0</quarkus.langchain4j.version>
@@ -58,18 +58,6 @@
             <groupId>io.quarkiverse.langchain4j</groupId>
             <artifactId>quarkus-langchain4j-mcp</artifactId>
             <version>${quarkus.langchain4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkiverse.langchain4j</groupId>
-            <artifactId>quarkus-langchain4j-mcp-deployment</artifactId>
-            <version>${quarkus.langchain4j.version}</version>
-            <type>pom</type>
-            <exclusions>
-                <exclusion>
-                    <groupId>*</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
 
